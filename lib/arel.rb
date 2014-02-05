@@ -26,7 +26,6 @@ require 'arel/nodes'
 
 
 #### these are deprecated
-require 'arel/deprecated'
 require 'arel/sql/engine'
 require 'arel/sql_literal'
 ####
