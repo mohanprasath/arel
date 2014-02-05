@@ -128,7 +128,7 @@ module Arel
       # FIXME: converting these to SQLLiterals is probably not good, but
       # rails tests require it.
       @ctx.projections.concat projections.map { |x|
-        [Symbol, String].include?(x.class) ? SqlLiteral.new(x.to_s) : x
+        [Symbol, String].include?(x.class) ? Nodes::SqlLiteral.new(x.to_s) : x
       }
       self
     end
